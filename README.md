@@ -7,12 +7,14 @@ Please consider supporting:
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="150" />
 </a> 
 or 
-<a href="https://github.com/sponsors/irmaosver-e">
+<a href="https://github.com/sponsors/irmaosver-e" target="_blank">
 <img src="https://img.shields.io/badge/GitHub%20Sponsors-brightgreen" width="215" />
 </a>
 
 required original ROM:
+
 File/ROM SHA-1: D7E7D8C358EB845B84FB08F904CC0B95D0A4053D
+
 File/ROM CRC32: 67A9860B
 
 hack features:
