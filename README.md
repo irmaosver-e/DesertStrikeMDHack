@@ -11,6 +11,11 @@ or
 <img src="https://img.shields.io/badge/GitHub%20Sponsors-brightgreen" width="215" />
 </a>
 
+version history
+v1.1
+* bug mission 4 unlocked shows random high score bug fix
+* mission 3 shows 2 power plants on map bug fix.
+
 required original ROM:
 
 File/ROM SHA-1: D7E7D8C358EB845B84FB08F904CC0B95D0A4053D
