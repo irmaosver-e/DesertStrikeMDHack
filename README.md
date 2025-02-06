@@ -12,9 +12,14 @@ or
 </a>
 
 version history
-v1.1
-* bug mission 4 unlocked shows random high score bug fix
+
+v1.2
+* loading campaign still has MIA copilot locked after rescued bug fixed  
 * mission 3 shows 2 power plants on map bug fix.
+* bazooka soldier height value adjusted, was causing collision with chopper on lower altitude 
+
+v1.1
+* mission 4 unlocked shows random high score bug fix
 
 required original ROM:
 
