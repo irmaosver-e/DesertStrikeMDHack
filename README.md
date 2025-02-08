@@ -12,6 +12,8 @@ or
 </a>
 
 version history
+v1.3
+* stage 3 mission 8 bus not turning when mode pressed bug fixed
 
 v1.2
 * loading campaign still has MIA copilot locked after rescued bug fixed  
