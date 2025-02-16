@@ -12,16 +12,19 @@ or
 </a>
 
 version history
+v1.4
+* bug fix - overriding a save of a previously cleared stage would lock following unlocked stages
+
 v1.3
-* stage 3 mission 8 bus not turning when mode pressed bug fixed
+* bug fix - stage 3 mission 8 bus not turning when mode pressed
 
 v1.2
-* loading campaign still has MIA copilot locked after rescued bug fixed  
-* mission 3 shows 2 power plants on map bug fix.
-* bazooka soldier height value adjusted, was causing collision with chopper on lower altitude 
+* bug fix - loading campaign still has MIA copilot locked after rescued.
+* bug fix - mission 3 shows 2 power plants on the map.
+* bazooka soldier height value adjusted, was causing a collision with the chopper on a lower altitude
 
 v1.1
-* mission 4 unlocked shows random high score bug fix
+* bug fix - mission 4 unlocked shows a random high score.
 
 required original ROM:
 
