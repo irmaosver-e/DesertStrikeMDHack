@@ -9,96 +9,120 @@ or
 </a>
 
 # DesertStrikeMDHack
-Rom hack of Desert Strike for the Mega Drive adding 6button + SRAM support
 
-version history
-v1.4
-* bug fix - overriding a save of a previously cleared stage would lock following unlocked stages
+Rom hack of *Desert Strike* for the Mega Drive adding 6-button + SRAM support
 
-v1.3
-* bug fix - stage 3 mission 8 bus not turning when mode pressed
+---
 
-v1.2
-* bug fix - loading campaign still has MIA copilot locked after rescued.
-* bug fix - mission 3 shows 2 power plants on the map.
-* bazooka soldier height value adjusted, was causing a collision with the chopper on a lower altitude
+## Version History
 
-v1.1
-* bug fix - mission 4 unlocked shows a random high score.
+**v1.4**
+- Bug fix: overriding a save of a previously cleared stage would lock following unlocked stages
 
-required original ROM:
+**v1.3**
+- Bug fix: stage 3 mission 8 bus not turning when mode pressed
 
-File/ROM SHA-1: D7E7D8C358EB845B84FB08F904CC0B95D0A4053D
+**v1.2**
+- Bug fix: loading campaign still has MIA copilot locked after rescue
+- Bug fix: mission 3 shows 2 power plants on the map
+- Bazooka soldier height value adjusted; was causing a collision with the chopper on a lower altitude
 
-File/ROM CRC32: 67A9860B
+**v1.1**
+- Bug fix: mission 4 unlocked shows a random high score
 
-hack features:
+---
 
-• a more robust save system, "campaign mode".
-• stage unlocked for selection in the main menu when cleared in "campaign mode".
-• per stage high score displayed on the main menu
-• 6 button support.
-• implements the unused altitude control code found in the original ROM
-• Copilot bios shortened/altered to reflect their effect on the rage attributes.
-• A description of the copilot range attributes was added to the bio.
-• copilot winch activation values spread further apart to have a more obvious difference in gameplay.
-• copilots are marked as TDY (Temporary Duty Yonder) until unlocked by clearing missions in "campaign mode"
-• The location of MIA copilot "Carlos" was changed.
-• Copilot select menu activated at every stage change unless starting stage from the main menu with a non-MIA copilot.
-• flying the helicopter without a copilot sets range attributes to very low
-• number of lives carried over to the next stage.
-• The game restarts to the title screen after the game over screen.
+## Required Original ROM
 
-------------------------
-controls:
-holding "mode" activates strafing  (makes strafing and firing missiles possible)
-holding "mode" + X = lower altitude.
-holding "mode" + Y = lower / increase altitude towards default.
-holding "mode" + Z = increase altitude.
+- **SHA-1**: `D7E7D8C358EB845B84FB08F904CC0B95D0A4053D`
+- **CRC32**: `67A9860B`
 
----------------------
-Copilot effects:
-The effect of the copilot on the helicopter behaviour could not be found in any of the manuals. what info was available was very subjective and left the player confused and wondering if there even was any difference in picking different copilots. 
+---
 
-The code has been investigated to finally find out exactly what difference each copilot makes on the helicopter's behaviour, which is,  the distance for the target auto-lock to activate and the radius for the winch to activate, this is now displayed along with their bios.
+## Hack Features
 
-Originally the winch activation radius for different copilots was so close to each other that the activation distance difference in gameplay was practically the same, only pixels apart, this has been increased to give a more tangible feel of each copilot effect in gameplay.
+- A more robust save system, "campaign mode"
+- Stage unlocked for selection in the main menu when cleared in "campaign mode"
+- Per-stage high score displayed on the main menu
+- 6-button support
+- Implements the unused altitude control code found in the original ROM
+- Copilot bios shortened/altered to reflect their effect on the range attributes
+- Description of copilot range attributes added to their bios
+- Copilot winch activation values spread further apart to show noticeable differences in gameplay
+- Copilots are marked as TDY (Temporary Duty Yonder) until unlocked in "campaign mode"
+- The location of MIA copilot "Carlos" was changed
+- Copilot select menu activated at every stage change (unless starting stage from main menu with a non-MIA copilot)
+- Flying without a copilot sets range attributes to very low
+- Number of lives carried over to the next stage
+- Game restarts to title screen after game over
 
-------------------
-SRAM support, "campaign mode" and "practice mode"
+---
 
-Once a level is cleared it becomes available for selection by pressing left or right on the main menu.
-The original password functionality has been retained.
-Saving occurs when the cleared stage screen showing the password is displayed.
+## Controls
 
-A level is activated in "campaign mode" when:
-• An SRAM saved password is entered.
+- Holding **Mode** activates strafing (makes strafing and firing missiles possible)
+- **Mode + X** = Lower altitude  
+- **Mode + Y** = Adjust altitude toward default  
+- **Mode + Z** = Increase altitude  
 
-A level is activated in "practice mode" when:
-• Selected from the unlocked stages.
-• Selected after a non-SRAM saved password is entered  (i.e. password taken from the internet)
+---
 
-how to enter a "campaign mode" saved stage:
-1 - select the unlocked stage from the main menu
-2 - Press "A" to enter the password menu, and the SRAM saved password will automatically load.
-3- press "Start",  you will be taken back to the main menu and stage selection is disabled.
-4- Press Start at the main menu to begin the level in "campaign mode"
-* -  to cancel "campaign mode" re-enter the password menu, alter the password auto-loaded password and press enter, you will be taken back to the main menu and level select is reenabled.
-(this step can be done at any point) - choose one of the unlocked copilots, if he was left MIA in the campaign the copilot select stage will trigger before the stage starts.
+## Copilot Effects
 
-"campaign mode" explained:
-• when starting from stage 1 "campaign mode" is always active, 
-• when a stage is cleared, the copilot state is saved.
-• the number of lives saved
-• the full score is saved (originally password saved scores would not carry over values lower than 1000, i.e. your cleared stage score was 12300, restarting the game from a password will restore only 12000) 
-• If a new playthrough is started the previous save will only be overeaten if the current score is higher than the previous for that stage. (saved campaign stages prioritize the best scores)
+The effect of the copilot on helicopter behavior could not be found in any official manuals. Available info was vague and left players unsure if different copilots made a difference.
 
-"practice mode" explained:
-• the player starts with the default 3 lives (5 or 10 if extra lives password was used)
-• The stage score starts at 0 if entering a stage by selecting an unlocked one.
-• The stage score starts at the amount set by password if entering a stage after entering a non-SRAM saved password.
-• clearing a stage takes the player to the next but no progress is saved.
-• stages cleared will not be unlocked for selection at the main menu
-• clearing stages only unlock copilots for the current playthrough, not permanently unlocked at the main menu.
-• MIA copilot can be found and selected at the next stage but only for the current playthrough, not permanently unlocked at the main menu.
-• MIA copilot is not unlocked when a non-SRAM saved password is entered.
+This has now been clarified. The copilot affects:
+- The **distance for target auto-lock**
+- The **radius for winch activation**
+
+These values are now displayed in the bios.
+
+Originally, winch radius values were so close that differences in gameplay were negligible. This has been adjusted for more noticeable effects.
+
+---
+
+## SRAM Support: Campaign Mode and Practice Mode
+
+Once a level is cleared, it becomes selectable via **Left/Right** on the main menu.  
+The original password system is still functional.  
+Saving occurs when the cleared stage screen (showing the password) is displayed.
+
+### Campaign Mode
+
+**A level is entered in campaign mode when:**
+- An **SRAM-saved** password is used
+
+**Steps:**
+1. Select the unlocked stage from the main menu  
+2. Press **A** to enter the password menu; SRAM password loads automatically  
+3. Press **Start** to return to main menu; stage select is disabled  
+4. Press **Start** again to begin in "campaign mode"  
+
+> To cancel: Enter password menu, alter the password, and press enter. You’ll return to main menu with stage select re-enabled.
+
+If the selected copilot is MIA in the campaign, the copilot select screen will appear before the stage begins.
+
+**Campaign Mode Features:**
+- Always active when starting from stage 1
+- Saves copilot state
+- Saves number of lives
+- Saves full score (fixes bug where scores <1000 lost digits)
+- Only overwrites save if new score is higher (saves best runs)
+
+---
+
+### Practice Mode
+
+**A level is entered in practice mode when:**
+- Selected from unlocked stages  
+- A non-SRAM password is used (e.g. from the internet)
+
+**Practice Mode Rules:**
+- Starts with default 3 lives (or 5/10 if lives password used)
+- Stage score starts at 0 (or from password)
+- Clearing a stage moves to next, but progress is **not saved**
+- Stages cleared are **not** unlocked on the main menu
+- Copilots unlocked only for current session
+- MIA copilot is temporary and only usable in the current session
+- MIA copilot **not unlocked** with non-SRAM passwords
+- 
