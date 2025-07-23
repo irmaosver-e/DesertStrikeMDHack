@@ -1,6 +1,3 @@
-# DesertStrikeMDHack
-Rom hack of Desert Strike for the Mega Drive adding 6button + SRAM support
-
 Please consider supporting:
 
 <a href="https://www.buymeacoffee.com/nani16bit" target="_blank">
@@ -10,6 +7,9 @@ or
 <a href="https://github.com/sponsors/irmaosver-e" target="_blank">
 <img src="https://img.shields.io/badge/GitHub%20Sponsors-brightgreen" width="215" />
 </a>
+
+# DesertStrikeMDHack
+Rom hack of Desert Strike for the Mega Drive adding 6button + SRAM support
 
 version history
 v1.4
