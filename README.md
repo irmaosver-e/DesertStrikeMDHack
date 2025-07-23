@@ -125,4 +125,3 @@ If the selected copilot is MIA in the campaign, the copilot select screen will a
 - Copilots unlocked only for current session
 - MIA copilot is temporary and only usable in the current session
 - MIA copilot **not unlocked** with non-SRAM passwords
-- 
