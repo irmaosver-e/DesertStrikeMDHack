@@ -1,5 +1,5 @@
 Please consider supporting:
-<div>
+<p>
 <a href="https://www.buymeacoffee.com/nani16bit" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="150" />
 </a> 
@@ -7,7 +7,7 @@ or
 <a href="https://github.com/sponsors/irmaosver-e" target="_blank">
 <img src="https://img.shields.io/badge/GitHub%20Sponsors-brightgreen" width="215" />
 </a>
-</div>
+</p>
 
 # DesertStrikeMDHack
 
