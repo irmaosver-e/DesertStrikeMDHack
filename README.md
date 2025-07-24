@@ -1,9 +1,13 @@
-Please consider supporting:
+# 📦 Download & Support
+If you enjoy this project, consider supporting me with a donation or a kind word.
 
 <a href="https://irmaosver-ehotmailcom.itch.io/desert-strike-ex/purchase">
 <img src="https://img.shields.io/badge/Download_on_Itch.Io-fa5c5c" width="215" />
 </a>
 
+Feedback is always welcome and helps me keep building better hacks.
+
+---
 
 # DesertStrikeMDHack
 
