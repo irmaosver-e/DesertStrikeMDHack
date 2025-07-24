@@ -1,15 +1,7 @@
 Please consider supporting:
 
-<a href="https://www.buymeacoffee.com/nani16bit" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="150" />
-</a> 
-or 
-<a href="https://github.com/sponsors/irmaosver-e" target="_blank">
-<img src="https://img.shields.io/badge/GitHub_Sponsors-brightgreen" width="215" />
-</a>
-
-<a href="https://irmaosver-ehotmailcom.itch.io/eliminate-down-remix/purchase" target="_blank">
-<img src="https://img.shields.io/badge/Download_on_Itch.Io-red" width="215" />
+<a href="https://irmaosver-ehotmailcom.itch.io/desert-strike-ex/purchase">
+<img src="https://img.shields.io/badge/Download_on_Itch.Io-fa5c5c" width="215" />
 </a>
 
 
